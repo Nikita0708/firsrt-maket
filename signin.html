@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="./img/Logo.svg" alt="" />
+        <img src="./img/Shape.png" alt="" class="header-img" />
+      </div>
+    </header>
+    <section class="signup">
+      <div class="container">
+        <h1 class="signup-title">Welcome back. We exist to make entrepreneurism easier.</h1>
+        <div class="signup-wrap">
+          <div class="google-btn-wrap">
+            <svg width="31" height="25" class="btn-icon">
+              <use href="./img/symbol-defs.svg#icon-google"></use>
+            </svg>
+            <a href="" class="google-btn-link">Sign up with Google</a>
+          </div>
+          <p class="signup-text">------- Or, sign in with your email -------</p>
+          <form>
+            <div class="form-field">
+              <label for="user-name" class="form-label">Full Name <span>*</span></label>
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="signup-input"
+                placeholder="First and last name"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="user-name" class="form-label">Password <span>*</span></label>
+              <input
+                type="password"
+                id="user-password"
+                name="user-password"
+                class="signup-input"
+                placeholder="Password (at least 10 characters)"
+                required
+              />
+            </div>
+            <div class="modal-privacy">
+              <input
+                type="checkbox"
+                name="privacy"
+                value="true"
+                class="singup-check visually-hidden"
+                id="privacy"
+              />
+              <label for="privacy" class="check-text">Keep me signed in</label>
+            </div>
+            <button type="submit" class="btn-submin">Sign in</button>
+          </form>
+          <p class="signup-bottom-text">
+            Don’t you have an account?
+            <a href="./signup.html" class="signup-bottom-link">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
